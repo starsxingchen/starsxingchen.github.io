@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我们的100天纪念日</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="home">
+    <h1>静＆金</h1>
+    <div id="love-timer">
+      <h2>我们已经在一起</h2>
+      <div class="timer-display">
+        <div class="timer-unit">
+          <span id="days">00</span>
+          <span>天</span>
+        </div>
+        <div class="timer-unit">
+          <span id="hours">00</span>
+          <span>小时</span>
+        </div>
+        <div class="timer-unit">
+          <span id="minutes">00</span>
+          <span>分钟</span>
+        </div>
+        <div class="timer-unit">
+          <span id="seconds">00</span>
+          <span>秒</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <nav id="navbar">
+    <div class="navbar-container">
+      <ul class="navbar-menu">
+        <li class="navbar-item">
+          <a href="#home" class="navbar-link">首页</a>
+        </li>
+        <li class="navbar-item">
+          <a href="#photos" class="navbar-link">照片墙</a>
+        </li>
+        <li class="navbar-item">
+          <a href="#letter" class="navbar-link">情书</a>
+        </li>
+        <li class="navbar-item">
+          <a href="#contract" class="navbar-link">年度契约</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <section id="photos">
+    <h2>我们的回忆</h2>
+    <div class="photo-grid">
+      <div class="photo-item" style="background-image: url('photo1.jpg')" onclick="openModal('photo1.jpg')"></div>
+      <div class="photo-item" style="background-image: url('photo2.jpg')" onclick="openModal('photo2.jpg')"></div>
+      <div class="photo-item" style="background-image: url('photo3.jpg')" onclick="openModal('photo3.jpg')"></div>
+      <div class="photo-item" style="background-image: url('photo4.jpg')" onclick="openModal('photo4.jpg')"></div>
+    </div>
+  </section>
+  
+  <section id="letter">
+    <div class="love-letter">
+      <h2>致我的女孩</h2>
+      <div class="letter-content">
+        <p>小静：</p>
+        <p>时间过得好快啊，一眨眼都100天了！还记得那天和你表白的时候，心跳快得像是要蹦出来，十分忐忑，明明话到嘴边却紧张得结结巴巴。可当你点头，笑着说"我也喜欢你"的时候，整个世界都亮了起来。</p>
+        <p>100天前，我们牵起了彼此的手。现在想想还是觉得神奇——明明每天都能见到你，却还是会在你突然回头看我时心跳漏半拍。你总爱在上课偷偷转过来，明明老师就在讲台上，可你的眼睛亮晶晶的，让我根本移不开视线。下课铃一响，你就会理直气壮地喊我过去。"过来一下"——明明没什么事，就是想让我站在你身边。出去的时候你会把脑袋靠在我手臂上，发丝蹭得我痒痒的；有时候只是拽着我的袖口玩，像只黏人的小猫。我们交换的日记本越来越厚，其实最让我心动的，是每次翻开本子都能看到你新写的那句："喜欢你。"
+ <p>100天教会我，最踏实的幸福就是：</p>
+ <p>你知道我永远会回应你的目光</p>
+ <p>我知道你喊我过去只是想撒娇</p>
+ <p>我们都把"喜欢你"变成了日常</p>
+        <p>第一个100天很甜，但我知道，和你在一起的未来会更甜。我们要一起把"喜欢你"写成一本厚厚的、永远写不完的书！（💝 第100天快乐，我的女孩）</p>
+        <p style="text-align: right; margin-top: 30px;">你亲爱的小男友小金</p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contract">
+    <div class="annual-contract">
+      <h2>约定</h2>
+      <ul class="contract-items">
+        <li>每个月至少一次约会</li>
+        <li>放假互道早安晚安</li>
+        <li>努力学习（我还是想我们在一个大学的实在不行一个城市也行）</li>
+        <li>保持沟通，不把问题留到第二天</li>
+        <li>好好爱自己！再爱我！！</li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- 图片模态框 -->
+  <div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+  
+  <footer>
+    <p>© 2025 静金恋爱记录</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
